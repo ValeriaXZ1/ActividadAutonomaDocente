@@ -84,28 +84,44 @@ export default function FormularioScreen() {
 }
 
 const styles = StyleSheet.create({
-    txt: {
-        fontSize: 20,
-    },
-
+  txt: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#4a0d0d',
+    textAlign: 'center',
+    letterSpacing: 1,
+    marginBottom: 8,
+  },
     linea: {
-        backgroundColor: 'black',
-        width: 150,
-        borderWidth: 1,
-        margin: 10,
-    },
+    width: '70%',
+    height: 4,                        
+    marginVertical: 16,
+    borderRadius: 2,
+    overflow: 'hidden',               
+    backgroundColor: '#4a0d0d',  
+                       
+  },
 
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
+   container: {
+  flex: 1,
+  backgroundColor: '#e0f7fa', 
+  alignItems: 'center',
+  justifyContent: 'center',
+  paddingHorizontal: 24,
+  gap: 20,
+},
 
-    input: {
-        fontSize: 25,
-        backgroundColor: '#6666',
-        width: "80%",
-        margin: 2,
-    }
+
+     input: {
+    width: '80%',
+    fontSize: 22,
+    paddingVertical: 12,
+    paddingHorizontal: 16,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: '#4a0d0d55',         
+    backgroundColor: '#ffffffaa',   
+    color: '#333',
+    marginBottom: 12,
+  },
 })

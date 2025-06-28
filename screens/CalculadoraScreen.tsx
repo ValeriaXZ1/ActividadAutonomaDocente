@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
 
     container: {
         flex: 1,
-        backgroundColor: 'skyblue',
+        backgroundColor: '#bab1fb',
         alignItems: 'center',
         justifyContent: 'center',
     },

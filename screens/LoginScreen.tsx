@@ -1,8 +1,8 @@
-import { Button, Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import React from 'react'
-import Entypo from '@expo/vector-icons/Entypo';
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
-export default function LoginScreen({ navigation }: any) {
+export default function LoginScreen({navigation} : any) {
   return (
     <View style={styles.container}>
       <Text style={[styles.txt, { fontSize: 60 }]}>Login</Text>
@@ -14,11 +14,11 @@ export default function LoginScreen({ navigation }: any) {
         placeholder='Tu contrasenia'
         style={styles.input}
       />
-      <TouchableOpacity style={styles.btn} onPress={() => navigation.navigate("Tab")} >
+      <TouchableOpacity style={styles.btn} onPress={() => navigation.navigate("Calculadora")} >
         <View style={styles.fila}>
           <Text style={styles.txt} >Ir a Calculadora</Text>
           <Text></Text>
-          <Entypo name="login" size={44} color="white" />
+          <MaterialCommunityIcons name="login-variant" size={24} color="black" />
         </View>
         <Image source={require("../assets/imagenes/calculator_2822971.png")} style={styles.img} />
       </TouchableOpacity>
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   },
 
   btn: {
-    backgroundColor: "blue",
+    backgroundColor: "#fa8e8e",
     width: "80%",
     height: 120,
     alignItems:'center',
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
 
   container: {
     alignItems: 'center',
-    backgroundColor: "#2bf736",
+    backgroundColor: "#b3f4f2",
     flex: 1,
     justifyContent: 'center',
   },
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   },
 
   txt: {
-    color: 'white',
+    color: '#111112',
     fontSize: 30,
   }
 })
